@@ -1,9 +1,70 @@
-# QUẢN LÝ NHÀ HÀNG
-##TÀI LIỆU KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU KHÁCH HÀNG
+# **QUẢN LÝ NHÀ HÀNG**
+## **TÀI LIỆU KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU KHÁCH HÀNG**
+
 |				|						|
 |---------------|-----------------------|
 |Ngày			|04/05/2015				|
 |Phiên bản:		|1.0					|
 |Các tác giả:	|CNPM					|
-|				|* Âu Văn Kiên - A21152	|
-|Liên hệ:		|						|
+|Liên hệ:		|cnpm_nhom3@gmail.com   |
+
+## **BẢNG PHÂN CÔNG CÔNG VIỆC**
+|Mã SV	|Tên	                |Công việc	                        |%Tham gia  |
+|-------|-----------------------|-----------------------------------|-----------|
+|A21152	|Âu Văn Kiên	        |Thiết kế, làm báo cáo              |           |
+|A21241	|Bùi Trường Giang	    |Phát triển cơ sở dữ liệu           |           |
+|A21283	|Lâm Đức Trung	        |Phát triển dự án                   |           |
+|A21378	|Phạm Hồng Đức	        |Làm slides, tích hợp tài liệu...   |           |
+|A21453	|Nguyễn Lê Hoàng Anh	|Viết báo cáo                       |           |
+
+## **MÔ TẢ TÀI LIỆU**
+|Ngày	    |Phiên bản	|Miêu tả	                                |Tác giả|
+|-----------|-----------|-------------------------------------------|-------|
+|04/05/2015	|1.0	    |- Hoàn thiện các mục 1, 2 và 3 của tài liệu|Nhóm 3 |
+
+1. **GIỚI THIỆU TÀI LIỆU**
+    1. **Mục đích**
+        * Tài liệu này được xây dựng với mục đích giúp nhóm dự án và khách hàng có thể nắm bắt được các yêu cầu của dự án từ đó xác định được phạm vi và kế hoạch triển khai dự án. Để giúp cho khách hàng và nhóm  phát triển dự án có thể hiểu nhau rõ hơn, tài liệu cũng bao gồm một số giao diện nhằm minh họa cho ý tưởng xây dựng hệ thống sau này.
+        * Tài liệu cũng chỉ ra phần thiết kế, cài đặt của 1 số chức năng chính trong hệ thống
+    2. **Phạm vi**
+        * Phạm vi của tài liệu tập trung vào các vấn đề sau:
+            * Mô tả yêu cầu của khách hàng
+            * Đặc tả yêu cầu hệ thống
+            * Xây dựng một số giao diện để demo cho khách hàng, giúp khách hàng có thể hiểu hệ thống hơn nhờ đó có thể làm rõ và thu thập thêm được các yêu cầu khác
+            * Kế hoạch triển khai dự án cho khách hàng
+            * Thiết kế và  cài đặt một số chức năng
+    3. Các định nghĩa, thuật ngữ, và từ viết tắt
+        * Admin : Quản trị viên
+        * HT : Hệ thống;
+        * QLNH : Quản lý nhà hàng;
+        * KNH : Khách của nhà hàng
+    4. Tham khảo
+2. **TỔNG QUAN VỀ HỆ THỐNG**
+    1. **Mô tả**
+        * Xây dựng được hệ thống quản lí nhà hàng ăn uống với đầy đủ các chức năng quản lí như : nhập, xuất hàng hoá trong kho, quản lí bàn ăn (thêm, ghép, rời bàn ăn), từng nhân viên bàn, quản lí công nợ khách hàng, quản lí thẻ ưu đãi cho khách hàng, các khoản chiết khấu, hoa hồng...
+        * Phần mềm phải có chức năng tạo các báo cáo về hàng hoá nhập/xuất/tồn kho, các báo cáo về công nợ, báo cáo về thu chi tiền mặt, thống kê doanh thu theo từng nhân viên, từng khu vực bàn ăn (nếu cửa hàng có nhiều khu vực bàn ăn khác nhau), các báo cáo kết quả kinh doanh.
+    2. Hiện trạng của khách hàng
+        * Trên thực tế đa phần các các nhà hàng phục vụ ăn uống đang áp dụng hình thức quản lí qua sổ sách, chứng từ một cách thủ công mà chưa áp dụng CNTT vào các công việc này.
+        * Qua một thời gian khảo sát khảo sát tại các nhà hàng ăn uống (với nhiều quy mô và điạ điểm hoạt động khác nhau) em thấy mô hình chung cách thức quản lí như sau:
+            * Bộ phận quản lý: Theo từng chu kỳ thời gian nhất định (ngày, tuần, tháng, quý) bộ phận quản lí có thể theo dõi, kiểm tra, các mặt hàng nhập/xuất/tồn để báo cáo lãnh đạo và phân tích, triển khai chiến lược kinh doanh mới.
+            * Bộ phận kế toán: Theo dõi được các khoản thu chi về tiền mặt, các khoản thu hồi công nợ. Hầu hết các tác vụ kế toán đều được thực hiện khá thủ công với hàng đống giấy tờ sổ sách khiến cho hiệu quả công việc không cao.
+            * Bộ phận bếp: Lên danh sách thực đơn và chế biến các món ăn.
+            * Nhân viên phục vụ bàn: Được cung cấp thông tin về món ăn cùng với đơn giá, số lượng một cách 
+        * Tính khả thi của dự án
+            * Mức độ phức tạp: 
+                * Chương trình chỉ dừng lại ở mức độ một chương trình quản lý nên không vượt quá khả năng của sinh viên. Các chức năng như kế toán tuy nằm ngoài kiến thức đã được học nhưng chỉ là các chức năng phụ với độ phức tạp ở mức có thể chấp nhận được.
+            * Thị trường:
+                * Tuy trên thị trường đã có nhiều phần mềm quản lý nhưng các phần mềm này chỉ mang tính cục bộ chưa có khả năng áp dụng đại trà cho một số lượng lớn các nhà hàng.
+            * Lợi ích mà phần mềm mang lại:
+                * Nhân viên phục vụ nắm bắt thông tin về thực đơn một cách nhanh chóng và hiệu quả.
+                * Giảm bớt gánh nặng sổ sách cho nhân viên kế toán.
+                * Ban lãnh đạo có thể tra cứu, thống kê hàng hoá; kiểm tra chéo giữa các bộ phận một cách dễ dàng, chính xác, nhanh gọn, nhanh chóng.Các nhân viên có thể làm việc theo nhóm, mỗi nhóm sẽ có một trưởng nhóm phụ trách. Các nhóm có thể làm việc theo khu vực hoặc theo thời gian.
+    3. **Yêu cầu nghiệp vụ**
+        1. **BR1: Nghiệp vụ quản lý kho hàng**
+            * Các hoạt động chính diễn ra ở kho hàng bao gồm:
+                1. BR1.1 Nhập nguyên liệu từ nhà cung cấp: Để nhập nguyên liệu, nhà kho sẽ tiến hành việc đặt hàng từ nhà cung cấp. Việc đặt những mặt hàng nào, số lượng bao nhiêu phụ thuộc vào yêu cầu từ nhà bếp, tình hình hàng hoá còn lại trong kho và những mặt hàng bị hỏng phải lập danh sách huỷ. Hàng hoá sẽ được kiểm tra khi nhập. Sau khi hàng hoá nhập kho, nhà cung cấp yêu cầu thanh toán theo đơn hàng. Việc thanh toán giữa nhà hàng với nhà cung cấp có thể diễn ra như sau : nhà hàng thanh toán toàn bộ số tiền cho nhà cung cấp tại thời điểm nhập hàng, nhà hàng thanh toán số tiền theo nhiều đợt, nhà hàng ghi công nợ với nhà cung cấp. Hình thức thanh toán gồm : bằng tiền mặt , bằng sec, bằng chuyển khoản v..v
+                2. BR1.2 Xuất nguyên liệu cho nhà bếp: Trước mỗi ngày làm việc, ban lãnh đạo phân tích tình hình dựa vào các đơn đặt hàng trước và nhu cầu sử dụng thực phẩm trung bình trong ngày để xác định số lượng nguyên liệu yêu cầu nhà kho xuất ra. Hoá đơn xuất kho được ghi giá bằng với giá nhập cho nguyên liệu đó
+                3. BR1.3 Luân chuyển hàng hoá giữa các kho (trong trường hợp hệ thống nhà hàng tại các địa điểm khác nhau): Trong trường hợp nhà hàng có nhiều kho hoặc nhà hàng có nhiều chi nhánh và mỗi chi nhánh có một kho riêng thì phải quản lý việc luân chuyển hàng hoá giữa các kho.
+                4. BR1.4 Theo dõi, kiểm kê, đánh giá hàng hoá trong kho: Việc theo dõi, kiểm kê hàng hoá trong kho có thể diễn ra hàng ngày, hàng tuần hoặc hàng tháng nhằm mục đích: 
+                    * Phát hiện những hàng hoá hỏng hoặc hết hạn sử dụng để đưa vào danh sách huỷ.
+                    * Kiểm tra số lượng hàng tồn kho thực tế từ đó xem có sai lệch so với số liệu trong sổ sách hay không.
