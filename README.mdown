@@ -88,19 +88,90 @@
     4. **Mô hình hóa các quy trình nghiệp vụ chính**
         * Quy trinh nhập hàng
         
-        ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Nhap%20hang.jpg?raw=true)
+        ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Nhap%20hang.jpg?raw=true)
         * Quy trinh đặt bàn
         
-        ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Dat%20ban.jpg?raw=true)
+        ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Dat%20ban.jpg?raw=true)
         * Quy trình bán hàng
             * *Gọi món ăn*
             
-            ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Goi%20mon.jpg?raw=true)
+            ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Goi%20mon.jpg?raw=true)
         * Quy trình thanh toán
             * *Thanh toán thu*
             
-            ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Thanh%20toan%20thu.jpg?raw=true)
+            ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Thanh%20toan%20thu.jpg?raw=true)
             * *Thanh toán chi*
             
-            ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Thanh%20toan%20chi.jpg?raw=true)
+            ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Thanh%20toan%20chi.jpg?raw=true)
     5. **Sơ đồ tổng quan các chức năng chính của hệ thống**
+    
+    ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/So%20do/Tong%20quan/So%20do.jpg?raw=true)
+        1. ***Các tác nhân tham gia hệ thống***
+            * **QLNH:** Là người có trách nhiệm quản lý các hoạt động : thu chi , quản lý nhân viên , xuất nhập kho ,… của từng nhà hàng sử dụng hệ thống.
+            * **Nhân viên kế toán:** tham gia hệ thống để nhận thông tin về xuất nhập kho, các hóa đơn… để làm thống kê thu chi cho nhà hàng.
+            * **Nhân viên:** Tham gia HT với mục đích theo dõi công việc của mình trong từng nhà hàng (VD: phục vụ bàn cần biết mình phụ trách bàn nào và những món gì, đầu bếp cần biết làm những món gì trong thời gian phục vụ ).
+            * **Admin:** Có các khả năng, quyền hạn như 1 QLNH . Nhưng sẽ có thêm quyền phân quyền quản lý nhà hàng cho các nhân viên
+            * **Khách hàng:** là người gọi món và chỉnh sửa yêu cầu món ăn của mình thông qua chiếc tablet có sẵn trong khu vực bàn ăn đó, khách hàng cũng có thể order bàn online thông qua hệ thống online của nhà hàng.
+        2. ***Các chức năng chính của hệ thống***
+            * Quản lý kho:
+                * Nhập/xuất hàng hóa
+                * Bán hàng
+                * Thanh toán.
+            * Quản lý khách hàng:
+                * Chăm sóc khách hàng;
+                * Theo dõi công nợ;
+                * Chiết khấu khuyến mãi.
+            * Quản lý thông tin nhà hàng:
+                * Tìm kiếm thông tin;
+                * Tra cứu thông tin theo ngày, tháng, quý, năm.
+            * Quản lý nhân viên:
+                * Theo dõi nhân viên;
+                * Tuyển dụng nhân viên mới;
+                * Đào tạo kĩ năng cho nhân viên cũ;
+                * Quản lý thời gian làm việc.
+            * Tạo báo cáo:
+                * Báo cáo tài chính;
+                * Báo cáo vật liệu;
+                * Báo cáo tổng hợp.
+            * Quản lý phục vụ và thanh toán của khách:
+                * Quản lý order của khách;
+                * Quản lý thanh toán của khách.
+            * Chức năng sao lưu phục hồi hệ thống:
+                * Sao lưu phục hồi dữ liệu khi cần thiết(giảm thiểu mất mát dữ liệu).
+            * Chức năng quản lý thẻ thành viên:
+                * Quản lý các phiêu đặt bàn;
+                * Tạo mới các phiêu đặt bàn;
+                * Thiết lập mức đặt cọc để có bàn;
+                * Cập nhât thông tin, hủy yêu cầu khi cần thiết.
+        3. ***Các thực thể chính (Key Abstraction)***
+            * *Nhóm nhân viên:* Bao gồm các thông tin như: Tên nhóm, mô tả, danh sách các quyền được sử dụng trên mỗi chức năng.
+            * *Nhân viên:* Bao gồm các thông tin như: Mã nhân viên, tên nhân viên, tên đăng nhập, mật khẩu, địa chỉ, số CMT, số điện thoại, chức vụ, ca làm việc ứng với mỗi ngày trong tuần.
+            * *Ca làm việc:* Bao gồm các thông tin: Tên ca làm việc, Thời gian bắt đầu, Thời gian kết thúc.
+            * *Món ăn:* Các thông tin về món ăn: Tên món ăn, mô tả, nguyên liệu, giá của món.
+            * *Loại món ăn:* Các thông tin về loại món ăn: Tên loại món ăn, mô tả.
+            * *Bàn:* Bao gồm các thông tin: số thứ tự bàn, mô tả về bàn, trạng thái của bàn.
+            * *Khách hàng:* Bao gồm các thông tin về khách hàng: Tên, mã khác hàng, số cmt, địa chỉ, số điện thoại, điểm tích lũy.
+            * *Hóa đơn gọi món:* Được in sau khi khách hàng thanh toán. Bao gồm các thông tin: Mã hóa đơn, mã khách hàng, tên khách hàng, địa chỉ, số điện thoại, các món ăn và giá của từng món ăn, thành tiền.
+            * *Hóa đơn đặt bàn:* Được in sau khi khách hàng thanh toán tiền đặt bàn tại nhà hàng. Bao gồm các thông tin: Mã hóa đơn, mã khách hàng, tên khách hàng, địa chỉ, số điện thoại, số tiền đã đặt cọc, số thứ tự bàn đã đặt, giá đặt cọc của bàn, thành tiền.
+            * *Báo cáo:* Các loại báo cáo về tình hình kinh doanh của nhà hàng. Bao gồm: Báo cáo về tài chính, về nguyên liệu và báo cáo tổng hợp.
+            * *Kho hàng:* Bao gồm các thông tin: Tên của nguyên vật liệu, số lượng, ngày nhập kho, hạn sử dụng.
+            * *Khuyến mãi:* Bao gồm các thông tin: Mã khuyến mãi, mô tả, mã cơ sở để phát hành khuyến mãi.
+            * *Bản sao lưu dữ liệu:* Khi người Admin thực hiện việc sao lưu thì một bản sao lưu sẽ được tạo ra. Khi muốn khôi phục dữ liệu cần chọn bản sao lưu để khôi phục.
+        4. ***Bảng ánh xạ BR với UC***
+
+|BR#	|Mô tả	                        |UC#     |
+|-------|-------------------------------|-------|
+|BR1	|Quản lý kho	                |UC#0005|
+|BR2	|Quản lý bàn	                |UC#0007|
+|BR3	|Quản lý menu	                |UC#0006|
+|BR4	|Quản lý gọi món	            |UC#0008|
+|BR5	|Quản lý thanh toán	            |UC#0015|
+|BR6	|Quản lý tài chính	            |UC#0011|
+|BR7	|Quản lý nhân viên	            |UC#0004|
+|BR8	|Quản lý khách hàng	            |UC#0009|
+|BR9	|Quản lý báo cáo	            |UC#0012|
+|BR10	|Sao lưu và phục hồi hệ thống	|UC#0016|
+
+
+        ***Sơ đồ luồng công việc***
+        ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/So%20do/Luong/So%20do.jpg?raw=true)
