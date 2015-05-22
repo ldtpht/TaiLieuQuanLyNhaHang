@@ -157,21 +157,14 @@
             * *Kho hàng:* Bao gồm các thông tin: Tên của nguyên vật liệu, số lượng, ngày nhập kho, hạn sử dụng.
             * *Khuyến mãi:* Bao gồm các thông tin: Mã khuyến mãi, mô tả, mã cơ sở để phát hành khuyến mãi.
             * *Bản sao lưu dữ liệu:* Khi người Admin thực hiện việc sao lưu thì một bản sao lưu sẽ được tạo ra. Khi muốn khôi phục dữ liệu cần chọn bản sao lưu để khôi phục.
+        
         4. ***Bảng ánh xạ BR với UC***
 
-|BR#	|Mô tả	                        |UC#     |
-|-------|-------------------------------|-------|
-|BR1	|Quản lý kho	                |UC#0005|
-|BR2	|Quản lý bàn	                |UC#0007|
-|BR3	|Quản lý menu	                |UC#0006|
-|BR4	|Quản lý gọi món	            |UC#0008|
-|BR5	|Quản lý thanh toán	            |UC#0015|
-|BR6	|Quản lý tài chính	            |UC#0011|
-|BR7	|Quản lý nhân viên	            |UC#0004|
-|BR8	|Quản lý khách hàng	            |UC#0009|
-|BR9	|Quản lý báo cáo	            |UC#0012|
-|BR10	|Sao lưu và phục hồi hệ thống	|UC#0016|
+        5.  ***Sơ đồ luồng công việc***
 
-
-        ***Sơ đồ luồng công việc***
         ![alt text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/So%20do/Luong/So%20do.jpg?raw=true)
+        6. ***Các ràng buộc khác***
+            * HT cần phải liên kết với các nhà cung cấp nguyên vật liệu để có nguồn cung cho việc chế biến thức ăn.
+            * Liên kết với máy in để thực hiện việc in hóa đơn cho KH sau khi trả phòng và thanh toán.
+3. **KẾ HOẠCH PHÁT TRIỂN DỰ ÁN**
+
