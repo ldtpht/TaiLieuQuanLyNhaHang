@@ -87,3 +87,20 @@
             * Sau khi thực hiện một trong hai cách trên, khách hàng thực hiện trả tiền đặt cọc với nhà hàng qua thẻ tín dụng hoặc trả trực tiếp tại nhà hàng trong thời gian quy định để nhà hàng chắc chắn việc sử dụng bàn theo thời gian khách hàng đặt trước đó.
     4. **Mô hình hóa các quy trình nghiệp vụ chính**
         * Quy trinh nhập hàng
+        
+        ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Nhap%20hang.jpg?raw=true)
+        * Quy trinh đặt bàn
+        
+        ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Dat%20ban.jpg?raw=true)
+        * Quy trình bán hàng
+            * *Gọi món ăn*
+            
+            ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Goi%20mon.jpg?raw=true)
+        * Quy trình thanh toán
+            * *Thanh toán thu*
+            
+            ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Thanh%20toan%20thu.jpg?raw=true)
+            * *Thanh toán chi*
+            
+            ![alt-text](https://github.com/ldtpht/TaiLieuQuanLyNhaHang/blob/master/Quy%20trinh%20nghiep%20vu/Thanh%20toan%20chi.jpg?raw=true)
+    5. **Sơ đồ tổng quan các chức năng chính của hệ thống**
