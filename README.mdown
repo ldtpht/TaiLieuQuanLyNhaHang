@@ -1,6 +1,6 @@
 # QUẢN LÝ NHÀ HÀNG
 ##TÀI LIỆU KHẢO SÁT VÀ PHÂN TÍCH YÊU CẦU KHÁCH HÀNG
-
+|				|						|
 |---------------|-----------------------|
 |Ngày			|04/05/2015				|
 |Phiên bản:		|1.0					|
